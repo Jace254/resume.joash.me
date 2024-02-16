@@ -5,7 +5,7 @@ This is my Résumé generator. You can check out my Résumé [here](https://resu
 
 ## How it works
 
-- The data is hosted by [Gist](https://gist.github.com/antfu/ceb04ede6daf195eaf51e32b6aef5d4e) with [JSON Resume](https://jsonresume.org/) standard.
+- The data is hosted by [Gist](https://gist.github.com/Jace254/f09113ec7cb9f2900ff783a2475d7c34) with [JSON Resume](https://jsonresume.org/) standard.
 - The website is hosted by [Vercel](https://vercel.com/) with CI/CD.
 - HTML is generated with [Handlebars](https://handlebarsjs.com/) and PDF is printed with [puppeteer](https://github.com/puppeteer/puppeteer/).
 
