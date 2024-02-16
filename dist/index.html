@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://antfu.me/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="https://antfu.me/favicon.png" type="image/png">
+    <title>Joash Agesa - Résumé</title>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Nunito+Sans:400,700&display=swap" rel="stylesheet">
+    <style>.clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+.clear-margin-sm {
+  margin-bottom: 0;
+}
+body {
+  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+.text-bolder {
+  font-weight: bold;
+}
+.enumeration:last-child:after {
+  content: '' !important;
+}
+.name-and-profession .name {
+  font-size: 2.8rem;
+  margin-bottom: 0;
+}
+.name-and-profession .job {
+  margin-bottom: 0.5rem;
+}
+@media only screen {
+  .container {
+    display: grid;
+    grid-template-columns: auto 15fr 50fr auto;
+  }
+  .container .page {
+    max-width: 50em;
+  }
+}
+@media (max-width: 768px) {
+  ul {
+    padding-left: 25px;
+  }
+  .container {
+    display: block;
+  }
+  .card {
+    padding: 1em !important;
+  }
+  .background-details {
+    display: block;
+  }
+  .background-details .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .icon,
+  .background-details .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .title {
+    display: none;
+  }
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.profile-card {
+  width: 100%;
+  text-align: left;
+}
+.profile-pic {
+  display: block;
+  padding: 1rem;
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+.contact-details .detail {
+  display: block;
+  line-height: 2;
+}
+.contact-details .detail .icon {
+  padding-right: 7px;
+  color: #888;
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.social-links {
+  margin-top: 1.5rem;
+}
+.social-link {
+  padding: 0 0.6rem;
+  color: inherit;
+  opacity: 0.7;
+}
+.social-link:hover,
+.social-link:focus {
+  opacity: 1;
+}
+.social-link:first-child {
+  padding-left: 0;
+}
+.social-link:last-child {
+  padding-right: 0;
+}
+.social-link > * {
+  vertical-align: middle;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:not(.icon) {
+  border-bottom: 1px dashed #0005;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.background-card h4 {
+  line-height: 1.2;
+  font-size: 1em;
+}
+.background-card h4 .title {
+  background: black !important;
+  color: white !important;
+  display: inline-block;
+  padding: 2px 12px 0 3px;
+  font-weight: bold;
+}
+.background-card h4:not(:first-child) {
+  margin-top: 2em;
+}
+.content {
+  line-height: 1.5;
+}
+.card {
+  background: white;
+  padding: 2em 3.5em;
+}
+.card-nested {
+  padding: 0.8rem 0 0.8rem 2rem;
+}
+.card-nested.relax {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.card-wrapper {
+  padding: 5px;
+}
+.enumeration:not(:last-child):after {
+  content: ", ";
+}
+.enumeration:last-child:after {
+  content: ".";
+}
+.github-stars {
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+.projects {
+  padding: 1rem 0;
+}
+.projects .text-muted {
+  margin-bottom: 0.4rem;
+}
+.projects .icon {
+  margin-right: 2px;
+}
+.px10 {
+  height: 10px;
+}
+.skill-table {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-gap: 1.5rem 1rem;
+}
+.skill-table .name {
+  font-weight: bold;
+  text-align: right;
+}
+.project-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem 1rem;
+}
+.print-only {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .profile-card,
+  .contact-details,
+  .profile-pic {
+    display: block;
+    text-align: center;
+  }
+  .card-nested {
+    padding-left: 0;
+  }
+  .project-table {
+    display: block;
+  }
+}
+.card-skills {
+  position: relative;
+}
+.skill-info {
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  .name-and-profession .name {
+    margin-top: -2rem;
+  }
+  .page {
+    margin-top: -4rem;
+  }
+  .social-links {
+    margin-top: 0.5rem;
+  }
+  body {
+    font-size: 10pt;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+  .card {
+    border: 0;
+    padding: 0;
+  }
+  .text-muted {
+    color: #777 !important;
+  }
+  .text-muted * {
+    color: inherit !important;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .contact-details .detail .icon {
+    color: #888 !important;
+  }
+  .labels {
+    display: inline;
+  }
+  .skill-info {
+    margin-left: 0;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .print-only {
+    display: inherit;
+  }
+  .no-print {
+    display: none;
+  }
+  .project-table {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.8rem 1rem;
+  }
+  .highlight {
+    margin-top: -0.3rem;
+  }
+  blockquote {
+    font-size: 100%;
+  }
+  .card-nested {
+    padding: 0.1rem 0 0.1rem 1rem;
+  }
+  .card-nested.relax {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .skill-table {
+    grid-gap: 0.8rem 0.5rem;
+  }
+  .background-card h4:not(:first-child) {
+    margin-top: 1em;
+  }
+  #work-projects-group {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 2fr 4fr;
+    page-break-after: always;
+  }
+}
+</style>
+  </head>
+
+  <body itemscope itemtype="http://schema.org/Person">
+    
+    <div class="container">
+      <section class="row">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="profile-card">
+                <!--<div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Joash Agesa" src="//www.gravatar.com/avatar/63b528bb90c04abe867b4c8ec3a8e813?s&#x3D;100&amp;r&#x3D;pg&amp;d&#x3D;mm" itemprop="image">
+                </div>
+                -->
+                <div class="contact-details">
+                  <div class="name-and-profession">
+                    <h3 class="text-bolder name" itemprop="name"> Joash Agesa</h3>
+                    <div class="text-muted job" itemprop="jobTitle">Software Engineer</div>
+                  </div>
+
+
+                    <div class="detail">
+                      <span class="info">
+                        <a href="mailto:joashagesa@yahoo.com" class="link-disguise" itemprop="email" target="_blank">joashagesa@yahoo.com</a>
+                      </span>
+                    </div>
+
+
+                </div>
+
+              <div class="social-links">
+                  <a class="social-link icon" href="https://github.com/Jace254" target="_blank">
+                    <span class="iconify" data-icon="ri:github-fill"></span>
+                    <!--<span class="social-link-text print-only">Jace254</span>-->
+                  </a>
+                  <a class="social-link icon" href="https://www.linkedin.com/in/joash-agesa" target="_blank">
+                    <span class="iconify" data-icon="ri:linkedin-box-fill"></span>
+                    <!--<span class="social-link-text print-only">antfu</span>-->
+                  </a>
+                  <a class="social-link icon" href="https://twitter.com/JoashMacenton" target="_blank">
+                    <span class="iconify" data-icon="ri:twitter-fill"></span>
+                    <!--<span class="social-link-text print-only">JoashMacenton</span>-->
+                  </a>
+                  <a class="social-link icon" href="https://instagram.com/__agesir__" target="_blank">
+                    <span class="iconify" data-icon="ri:instagram-line"></span>
+                    <!--<span class="social-link-text print-only">Agesa</span>-->
+                  </a>
+                  <a class="social-link icon" href="https://joash.me" target="_blank">
+                    <span class="iconify" data-icon="ri:account-circle-fill"></span>
+                    <!--<span class="social-link-text print-only">joash.me</span>-->
+                  </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="row page">
+        <div class="card-wrapper">
+          <div class="card background-card">
+
+            <h4 id="about"></span> <span class="title">About</span> </h4>
+            <div class="card-nested" itemprop="description">
+              <p> My name is Joash Agesa, a bachelor of computer software Engineering student and a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.<br><br>I am also an open-source enthusiast. I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry. </p>
+            </div>
+
+            <div id="work-projects-group">
+              <div id="projects">
+                <h4><span class="title">Projects</span></h4>
+                <div class="list-unstyled projects">
+                  <div class="project-table">
+                    <li class="card-nested ">
+                      <div class="content has-sidebar">
+                        <p class="clear-margin-sm" itemprop="award">
+                          <strong>CodeGround</strong>&nbsp
+                            <a href="https://github.com/Jace254/code.joash.me" class='icon' target="_blank">
+                              <span class="iconify" data-icon="ri:github-fill"></span>
+                            </a>
+                            <a href="https://cide.joash.me/" class='icon' target="_blank">
+                              <span class="iconify" data-icon="ri:arrow-right-up-line"></span>
+                            </a>
+                        </p>
+                        <p class="text-muted">
+                          <small> An Educational Online Code Editor powered by AI Documentation </small>
+                        </p>
+                          <p class="github-stars">
+                            <span class="iconify" data-icon="ri:star-fill"></span>
+                            <span class="stars" data-gh-api="https://api.github.com/repos/Jace254/code.joash.me">0</span>
+                          </p>
+                      </div>
+                    </li>
+                    <li class="card-nested ">
+                      <div class="content has-sidebar">
+                        <p class="clear-margin-sm" itemprop="award">
+                          <strong>100 days Challenge</strong>&nbsp
+                            <a href="https://github.com/Jace254/100.joash.me" class='icon' target="_blank">
+                              <span class="iconify" data-icon="ri:github-fill"></span>
+                            </a>
+                            <a href="https://100.joash.me/" class='icon' target="_blank">
+                              <span class="iconify" data-icon="ri:arrow-right-up-line"></span>
+                            </a>
+                        </p>
+                        <p class="text-muted">
+                          <small> 100 days of design challenge </small>
+                        </p>
+                          <p class="github-stars">
+                            <span class="iconify" data-icon="ri:star-fill"></span>
+                            <span class="stars" data-gh-api="https://api.github.com/repos/Jace254/100.joash.me">0</span>
+                          </p>
+                      </div>
+                    </li>
+                    <li class="card-nested ">
+                      <div class="content has-sidebar">
+                        <p class="clear-margin-sm" itemprop="award">
+                          <strong>Beeetle</strong>&nbsp
+                            <a href="https://chatbot.joash.me/" class='icon' target="_blank">
+                              <span class="iconify" data-icon="ri:arrow-right-up-line"></span>
+                            </a>
+                        </p>
+                        <p class="text-muted">
+                          <small> An embeddable Chat Wigdet with ai powered conversation </small>
+                        </p>
+                      </div>
+                    </li>
+                  </div>
+                    <li class="card-nested text-muted">
+                      <a href="https://joash.me" target="_blank">More Projects...</a>
+                    </li>
+                  <div class='px10'></div>
+                </div>
+              </div>
+
+              <div id="work-experience">
+                <h4> <span class="title">Work Experience</span> </h4>
+                <ul class="list-unstyled">
+                    <li class="card-nested relax">
+                      <div class="content has-sidebar">
+                        <p class="clear-margin-sm">
+                          <strong><a href="https://virtualweb.us/" target="_blank">VIRTUALWEB TECHNOLOGIES</a></strong>
+                          <span class="text-muted" style="margin-left: 0.3em">Software Engineer</span>
+                        </p>
+                        <p class="text-muted">
+                          <small>
+                            <span class="space-right"> Jun 2023 - Present | Remote</span>
+                          </small>
+                        </p>
+                        <p>In Department</p>
+                          <ul class='highlight'>
+                              <li> Developed mobile applications driving business operations </li>
+                              <li> Created Script Automations for the business cloud monitoring </li>
+                              <li> Designed the Cloud Access Portal for end users </li>
+                          </ul>
+                      </div>
+
+                    </li>
+                    <li class="card-nested relax">
+                      <div class="content has-sidebar">
+                        <p class="clear-margin-sm">
+                          <strong><a href="https://siafusocial.org" target="_blank">SiafuSocial Ltd.</a></strong>
+                          <span class="text-muted" style="margin-left: 0.3em">Technical Lead</span>
+                        </p>
+                        <p class="text-muted">
+                          <small>
+                            <span class="space-right"> May 2023 - Nov 2023 | Nairobi, Kenua</span>
+                          </small>
+                        </p>
+                        <p>In Product R &amp; D and Engineering Architecture Department</p>
+                          <ul class='highlight'>
+                              <li> Collaboratively remediated 120+ software anomalies, contributing to user-centric features via reusable code. </li>
+                              <li> Verified and optimized feasibility of 100+ UI/UX designs for 2+ applications. </li>
+                              <li> Implementing security measures such as encryption, authentication, and authorization. </li>
+                              <li> Optimizing backend code and database queries to improve application performance and response times. </li>
+                          </ul>
+                      </div>
+
+                    </li>
+                </ul>
+              </div>
+            </div>
+
+            <h4 id="skills"><span class="title">Stacks</span> </h4>
+            <div class="card-nested" itemprop="description">
+              <div class="skill-table">
+                    <div class='name'>Frontend</div> 
+                    <div>TypeScript, JavaScript, Vue, Nuxt, React, Next.js, React Native, Vite</div>
+                    <div class='name'>Backend</div> 
+                    <div>Node, MongoDB, MySQL, Serverless, Nginx, Docker, Dokku</div>
+                    <div class='name'>Mobile</div> 
+                    <div>Android, Kotlin, PWA</div>
+                    <div class='name'>DevOps</div> 
+                    <div>Firebase, AWS, Azure, AliCloud</div>
+                    <div class='name'>Languages</div> 
+                    <div>Python, Java, C/C++, C#, Go</div>
+              </div>
+            </div>
+            <div class='px10'></div>
+
+            <div id="education">
+              <h4><span class="title">Education</span></h4>
+              <ul class="list-unstyled">
+                  <li class="card-nested">
+                    <div class="content has-sidebar">
+                      <p class="clear-margin-sm">
+                        <strong> Computer Software Engineering, Bachelor of Science - BS</strong>,&nbsp;
+                        Kirinyaga University
+                      </p>
+                      <p class="text-muted clear-margin-sm">
+                        <small>
+                          Sep 2019 -  Sep 2023 
+                        </small>
+                      </p>
+                      <div></div>
+                      <i></i>
+                      <div class="space-top labels">
+                        
+                      </div>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+
+
+
+
+
+
+
+            <h4 id="languages"><span class="title">Languages</span> </h4>
+            <p class="card-nested">
+                <span class="enumeration"><strong>Swahili</strong> (Native speaker)</span>
+                <span class="enumeration"><strong>English</strong> (Fluent)</span>
+                <span class="enumeration"><strong>Japanese</strong> (Beginner)</span>
+            </p>
+
+            <div style="text-align:center">
+              <div class="detail no-print" style="font-size:1.5rem;margin-top:2rem;">
+                <a href="https://resume.antfu.me/resume.pdf" class="info" itemprop="pdf" target="_blank">
+                  PDF Version
+                </a>
+              </div>
+               <div class="detail print-only" style="font-size:1.5rem;margin-top:2rem;" >
+                <a href="https://resume.antfu.me" class="info" itemprop="pdf" target="_blank">
+                  Online Version
+                </a>
+              </div>
+              <div style="opacity:0.7; font-size:1.2rem;margin-top:1rem;">Last updated at February 16th 2024, 6:37:55 pm</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+    <script>
+      async function updateStars(){
+        await Promise.all(
+          Array.from(document.querySelectorAll('[data-gh-api]'))
+            .map(async (e) => {
+              const api = e.dataset.ghApi
+              const r = await fetch(api)
+              const json = await r.json()
+              if (json.stargazers_count)
+                e.innerText = json.stargazers_count
+              console.info(`${api} - ${json.stargazers_count}`)
+            })
+        )
+      }
+      window.addEventListener('load', updateStars)
+    </script>
+  </body>
+</html>
