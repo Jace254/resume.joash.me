@@ -1,6 +1,6 @@
 # Resume
 
-You can check out my Résumé [here](https://resume.joash.me).
+You can check out my Resume [here](https://resume.joash.me).
 
 
 ## How it works
