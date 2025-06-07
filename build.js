@@ -29,7 +29,7 @@ async function buildPDF(html) {
   const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage();
   console.log('Opening puppeteer...')
-  await page.setContent(html, { waitUntil: 'networkidle2' })
+  await page.setContent(html, { waitUntil: 'networkidle0' })
   console.log('Generating PDF...')
   const pdf = await page.pdf({
     format: 'A4', 
